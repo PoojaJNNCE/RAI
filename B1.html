@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Boss 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 1;
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 25px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    }
+    .boss-letters {
+      font-size: 80px;
+      font-weight: 900;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .boss-letters span {
+      opacity: 0;
+      transform: translateY(-50px);
+      display: inline-block;
+      background: linear-gradient(90deg, #ff6a00, #ee0979, #00c9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: bounceIn 0.6s forwards;
+    }
+    .boss-letters span:nth-child(1) { animation-delay: 0s; }
+    .boss-letters span:nth-child(2) { animation-delay: 0.2s; }
+    .boss-letters span:nth-child(3) { animation-delay: 0.4s; }
+    .boss-letters span:nth-child(4) { animation-delay: 0.6s; }
+    @keyframes bounceIn {
+      0% { opacity: 0; transform: translateY(-50px); }
+      60% { opacity: 1; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .message {
+      font-size: 1.4rem;
+      color: #333;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+    .message span {
+      background: linear-gradient(90deg,#ee0979,#ff6a00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+    }
+    .photo {
+      margin-top: 30px;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 240px;
+      height: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .photo img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="boss-letters">
+      <span>B</span>
+      <span>O</span>
+      <span>S</span>
+      <span>S</span>
+    </div>
+    <div class="message">
+      Happy Birthday, <span>Boss 🎉</span><br>
+      You’re my calm in chaos, my biggest blessing, and my forever best friend 💙
+    </div>
+   
+  </div>
+</body>
+</html>
